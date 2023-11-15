@@ -4,15 +4,9 @@
     <list default="true" id="d5ebe0d9-bc55-422d-9078-9ca11fb42770" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CategoryGridTile.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CategoryGridTile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/IconButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/IconButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MealDetail/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MealDetail/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MealDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MealDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MealItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MealItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dummy-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/dummy-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/CategoriesScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/CategoriesScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MealItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MealsList/MealItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/FavoritesScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/FavoritesScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/MealDetailScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/MealDetailScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/MealsOverviewScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/MealsOverviewScreen.js" afterDir="false" />
     </list>
@@ -50,6 +44,9 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/MealsList" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/data" />
@@ -81,7 +78,7 @@
       <workItem from="1699869942722" duration="4095000" />
       <workItem from="1699883635152" duration="8368000" />
       <workItem from="1699971998506" duration="6184000" />
-      <workItem from="1700045401229" duration="1639000" />
+      <workItem from="1700045401229" duration="8310000" />
     </task>
     <servers />
   </component>

@@ -69,10 +69,63 @@ options={{
                     }}
 OR directly in the component
 
+###Drawer Navigation
+- install `npm install @react-navigation/drawer`
+- if using Expo run `npx expo install react-native-gesture-handler react-native-reanimated`
+- in App.js add 
+    - import { createDrawerNavigator } from '@react-navigation/drawer';
+    -   const Drawer = createDrawerNavigator();
+ 
+-   function MyDrawer() {
+   return (
+     <Drawer.Navigator>
+       <Drawer.Screen name="Feed" component={Feed} />
+       <Drawer.Screen name="Article" component={Article} />
+     </Drawer.Navigator>
+   );
+ }
+ 
+To use drawer in for example button
 
+const openDrawer = ()=>{
+navigation.toggleDrawer(); //navigation is pass automatically to ScreenComponent or use useNavigation()
+}
+<Button onPress={openDrawer} title="openDrawer">
+
+##Bottom tabs
+- install 'npm install @react-navigation/bottom-tabs'
+- add in App.js
+    - import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+    - const Tab = createBottomTabNavigator();
+    -function MyTabs() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Settings" component={SettingsScreen} />
+    </Tab.Navigator>
+  );
+}
 ### ICons
 import {Ionicons} from '@expo/vector-icons'
 
 ##Context API
+- create store folder,  context and redux subfolders.
+- create Fafavorites-context.js
+    - import {createContext} from 'react';         
+    - const FavoritesContext = createContext();
+    - create function FavoriteContextProvider ({children}) {             
+                 return <FavoritesContext.Provider>{children}</FavoritesContext.Provider>
+             }
+             export default FavoriteContextProvider
+- wrap components that will use context with <FavoriteContextProvider></FavoriteContextProvider>
+- create initState, and all function we need
+- Use context
+  - in component we need context 
+    - import { useContext } from 'react';
+    - const ctx = useContext();
+    
+##Redux Toolkit
+
+
 
 
