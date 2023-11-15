@@ -1,9 +1,27 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import {FlatList} from 'react-native';
 import {CATEGORIES} from '../data/dummy-data';
 import CategoryGridTitle from '../components/CategoryGridTile';
+import IconButton from '../components/IconButton';
 
 function CategoriesScreens({navigation}) {
+
+    const headerButtonPressHandler = ()=>{
+        navigation.navigate('Favorite')
+    }
+    useLayoutEffect(()=>{
+        navigation.setOptions({
+            headerLeft:()=>{
+                return(
+                  <IconButton
+                    icon="heart"
+                    color="white"
+                    onPress={headerButtonPressHandler}
+                  />
+                )
+            }
+        })
+    }, [headerButtonPressHandler, navigation]);
 
     function renderCategoryItem(itemDate) {
         const pressHandler = () =>{

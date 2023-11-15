@@ -72,3 +72,7 @@ OR directly in the component
 
 ### ICons
 import {Ionicons} from '@expo/vector-icons'
+
+##Context API
+
+

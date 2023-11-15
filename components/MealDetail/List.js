@@ -4,9 +4,9 @@ import React from 'react';
 const List = ({ data }) => {
     return (
 
-      data.map((dataPoint) => (
+      data.map((dataPoint, index) => (
         <View style={styles.listItem}>
-            <Text style = {styles.itemText} key={dataPoint}>{dataPoint}</Text>
+            <Text style = {styles.itemText} key={dataPoint+index}>{dataPoint}</Text>
         </View>
       ))
     );

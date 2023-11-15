@@ -29,7 +29,7 @@ const MealDetailScreen = ({ navigation}) => {
                     )
                 }
         })
-    }, [headerButtonPressHandler, navigation])
+    }, [headerButtonPressHandler, navigation]);
     return (
       <ScrollView style={styles.rootContainer}>
 

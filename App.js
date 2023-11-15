@@ -10,6 +10,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import MealsOverviewScreen from './screens/MealsOverviewScreen';
 import MealDetailScreen from './screens/MealDetailScreen';
+import FavoriteScreen from './screens/FavoriteScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -54,6 +55,8 @@ export default function App () {
                     //     }
                     // }}
                   />
+                  <Stack.Screen name="Favorite"
+                                component = {FavoriteScreen}/>
               </Stack.Navigator>
 
           </NavigationContainer>
