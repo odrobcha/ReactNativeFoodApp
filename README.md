@@ -9,14 +9,13 @@ There 2 options:
       `npx expo start`
 - ReactNative CLI. Tool provided to ReactNative tool. 
 
-###Running on real device
+##Running on real device
 
 Install Expo App on your device
 run `npx expo start`
 scan barCode by phone. And grant the all needed permission to Expo App
 
-
-###Running on emulator
+##Running on emulator
 install Android studio (Linux or Windows)
 or 
 Xcode (only for iOS)
@@ -109,7 +108,7 @@ navigation.toggleDrawer(); //navigation is pass automatically to ScreenComponent
 import {Ionicons} from '@expo/vector-icons'
 
 ##Context API
-- create store folder,  context and redux subfolders.
+- create store folder and context subfolders.
 - create Fafavorites-context.js
     - import {createContext} from 'react';         
     - const FavoritesContext = createContext();
@@ -125,7 +124,29 @@ import {Ionicons} from '@expo/vector-icons'
     - const ctx = useContext();
     
 ##Redux Toolkit
-
-
+- install `npm install @reduxjs/toolkit`
+- install `npm install react-redux`
+- create store folder redux subfolders. 
+- create store.js
+    - import {configureStore} from '@reduxjs/toolkit'
+    - wrap the App.js with  <Provider store={store}> and provide store;
+    - import { Provider } from 'react-redux';
+    - import {store} from './store/redux/store';
+    - create extra store file (favorites.js);
+        - Slice import {createSlice} from '@reduxjs/toolkit';
+        - create initials state and reducers
+        - export default the reducers
+        - export all actions
+    - in store.js import favorites from './favorites';
+    - reducer: {
+              favoriteMeals: favorites  //to use ut with the name 'favoriteMeals' over the App
+          }
+####Use redux store
+- In the component wee need data from store import {useSelector} from 'react-redux';
+     const favoriteMealsIds =  useSelector((state)=> state.favoriteMeals.ids);
+- To dispatch action  import {useDispatch} from 'react-redux';
+         - const dispatch = useDispatch();
+         - import {action1, action2} from '../store/redux/favorites';
+         - dispatch(action1({id: mealId}))
 
 

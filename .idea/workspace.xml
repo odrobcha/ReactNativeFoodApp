@@ -5,10 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MealItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MealsList/MealItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/FavoritesScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/FavoritesScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/MealDetailScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/MealDetailScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/MealsOverviewScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/MealsOverviewScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/context/favorites-context.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/context/favorites-context.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +79,7 @@
       <workItem from="1699869942722" duration="4095000" />
       <workItem from="1699883635152" duration="8368000" />
       <workItem from="1699971998506" duration="6184000" />
-      <workItem from="1700045401229" duration="8310000" />
+      <workItem from="1700045401229" duration="10563000" />
     </task>
     <servers />
   </component>
