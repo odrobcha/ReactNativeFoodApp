@@ -150,3 +150,100 @@ import {Ionicons} from '@expo/vector-icons'
          - dispatch(action1({id: mealId}))
 
 
+
+## Build and Publish App
+
+Publishing - put it in Google or AppStore
+
+### With Expo
+- Configuring Projects Build App Binaries
+- build on Expo's clouds Services
+- Submit App to stores 
+
+Documentation
+   - https://docs.expo.dev/eas/   
+   - https://docs.expo.dev/versions/latest/config/app/     - App name, unique identifier, version
+   - https://docs.expo.dev/build-reference/variables/      - Environment Variables
+   - https://docs.expo.dev/tutorial/configuration/         - Icons & Splash Screen 
+
+#### Config settings
+The settings are in app.json
+#### Build
+Documentation https://docs.expo.dev/build/setup/
+
+- create App
+- create Expo user Account
+- Install the latest EAS CLI.
+Run `npm install -g eas-cli`
+- login to eas account. Run `eas login`
+- Config project. Run `eas build:configure`. This will add eas.json
+- Build the installable APK  to test it for:
+#### Android 
+Documentation https://docs.expo.dev/build-reference/apk/
+   
+- Modify eas.json 
+    - for Android Add {
+                        "build": {
+                          "preview": {
+                            "android": {
+                              "buildType": "apk"
+                            }
+                          },
+                          "preview2": {
+                            "android": {
+                              "gradleCommand": ":app:assembleRelease"
+                            }
+                          },
+                          "preview3": {
+                            "developmentClient": true
+                          },
+                          "production": {}
+                        }
+                      }
+ 
+    - run `eas build -p android --profile preview` to build for android
+    - add unique App identifier
+    - add Android Keystore
+    
+#### iOS 
+Documentation https://docs.expo.dev/build-reference/simulators/   
+
+- Modify eas.json 
+{
+  "build": {
+    "preview": {
+      "ios": {
+        "simulator": true
+      }
+    },
+    "production": {}
+  }
+}
+- run `eas build -p ios --profile preview`
+
+    
+#### Build the production
+- You need Google Play account or Apple Acount.
+- 
+    - Android run `eas build --platform android`    
+    - iOs run `eas build --platform ios`
+    - for all run `eas build --platform all`
+    - submit APP tot store with expo eas https://docs.expo.dev/submit
+
+#### Without Expo
+- Configuring Projects Build App Binaries 
+- Build App locally
+- Submit App to stores 
+
+### Configuration for production
+- Permissions
+- App name, unique identifier, version
+- Environment Variables
+- Icons & Splash Screen 
+
+###Notifications
+
+####Local notification 
+ Is the notification that are trigered by the installed app, for the local device, NOT sent other user or devices
+ 
+
